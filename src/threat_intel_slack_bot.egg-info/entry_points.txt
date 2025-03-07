@@ -1,2 +1,0 @@
-[console_scripts]
-threat_intel_bot = threat_intel_bot.threat_intel_bot:main
