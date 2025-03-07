@@ -1,0 +1,6 @@
+requests
+beautifulsoup4
+python-dotenv
+slack-sdk
+langchain
+langchain-openai

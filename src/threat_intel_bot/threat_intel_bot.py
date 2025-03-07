@@ -11,7 +11,10 @@ from langchain.chains.summarize import load_summarize_chain
 from langchain.text_splitter import CharacterTextSplitter
 from time import sleep
 
-load_dotenv()
+# Get the absolute path to the .env file
+dotenv_path = os.path.join(os.path.dirname(__file__), "..", ".env")
+
+load_dotenv(dotenv_path)
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 SLACK_BOT_TOKEN = os.getenv("SLACK_BOT_TOKEN")
@@ -243,5 +246,9 @@ def send_slack_message(article):
             send_slack_message(article)
 
 
+def main():
+    """Entry point for the script."""
+    process_and_send_news()  # Ensure this function is defined in your script
+
 if __name__ == "__main__":
-    process_and_send_news()
+    main()

@@ -39,12 +39,13 @@ pip install .
 
 ## ⚙️ Configuration
 
-This bot requires **Slack API credentials** and an **OpenAI API key**. Create a `.env` file in the project root and add the following:
+This bot requires **Slack API credentials** and an **OpenAI API key**. 
+Export these credentials as shown below:
 
-```ini
-OPENAI_API_KEY=your_openai_api_key
-SLACK_BOT_TOKEN=your_slack_bot_token
-SLACK_CHANNEL=#threat-intel
+```bash
+export OPENAI_API_KEY=your_openai_api_key
+export SLACK_BOT_TOKEN=your_slack_bot_token
+export SLACK_CHANNEL=channel-id
 ```
 
 ## 🏃 Usage

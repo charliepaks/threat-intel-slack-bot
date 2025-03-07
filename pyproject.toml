@@ -2,6 +2,8 @@
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
+
+
 [project]
 name = "threat-intel-slack-bot"
 version = "0.1.0"
@@ -18,8 +20,9 @@ dependencies = [
     "langchain-openai",
 ]
 
-[tool.setuptools]
-packages = ["src"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [project.scripts]
-threat_intel_bot = "src.threat_intel_bot:main"
+threat_intel_bot = "threat_intel_bot.threat_intel_bot:main"

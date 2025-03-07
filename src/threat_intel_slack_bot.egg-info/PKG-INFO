@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: threat-intel-slack-bot
+Version: 0.1.0
+Summary: A bot that fetches, summarizes, and shares cybersecurity news in Slack
+Author-email: Charles Chibueze <charlesukpaka@ymail.com>
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: python-dotenv
+Requires-Dist: slack-sdk
+Requires-Dist: langchain
+Requires-Dist: langchain-openai
