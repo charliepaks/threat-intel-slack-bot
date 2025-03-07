@@ -1,5 +1,6 @@
 .env
 __pycache__
 venv/
-src/threat-intel-slack-bot.egg-info/
+*.egg-info
+.DS_Store
 build/
