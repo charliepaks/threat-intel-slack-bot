@@ -248,7 +248,6 @@ def send_slack_message(article):
 
 def main():
     """Entry point for the script."""
-    process_and_send_news()  # Ensure this function is defined in your script
-
+    process_and_send_news()  
 if __name__ == "__main__":
     main()
